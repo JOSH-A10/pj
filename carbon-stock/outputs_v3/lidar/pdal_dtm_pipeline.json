@@ -1,0 +1,27 @@
+{
+  "pipeline": [
+    "C:\\Users\\josha\\Desktop\\Carbon stock lidar\\carbon-stock\\data\\raw\\lidar\\local_tiles\\USGS_LPC_CA_NorthernCA_B22_10TDL0902 (1).laz",
+    "C:\\Users\\josha\\Desktop\\Carbon stock lidar\\carbon-stock\\data\\raw\\lidar\\local_tiles\\USGS_LPC_CA_NorthernCA_B22_10TDL0903.laz",
+    {
+      "type": "filters.merge"
+    },
+    {
+      "type": "filters.crop",
+      "polygon": "POLYGON ((408803.5694485958 4502814.932627554, 409561.63667365344 4502803.859360624, 409521.40458843985 4503521.643984404, 408803.4170403427 4503541.26463227, 408803.5694485958 4502814.932627554))"
+    },
+    {
+      "type": "filters.range",
+      "limits": "Classification[2:2]"
+    },
+    {
+      "type": "writers.gdal",
+      "filename": "C:\\Users\\josha\\Desktop\\Carbon stock lidar\\carbon-stock\\outputs_v3\\lidar\\dtm_5m.tif",
+      "resolution": 5.0,
+      "output_type": "min",
+      "gdalopts": "TILED=YES,COMPRESS=LZW,BIGTIFF=IF_SAFER",
+      "bounds": "([408803.4170403427, 409561.63667365344], [4502803.859360624, 4503541.26463227])",
+      "override_srs": "EPSG:32610",
+      "nodata": "-9999"
+    }
+  ]
+}

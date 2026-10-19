@@ -1,0 +1,13 @@
+{
+  "source": "USGS_3DEP",
+  "project": "LA_Sabine_River_Lidar_2018_D18",
+  "project_id": "75813",
+  "acquisition_year": "2018",
+  "collect_start": 1517529600000,
+  "collect_end": 1521590400000,
+  "methodology_note": "ALS year not forced; latest available structural data used",
+  "download_status": "s3_success",
+  "access_mode": "s3_public",
+  "s3_path": "LA_Sabine_River_Lidar_A1_2018/",
+  "tiles_downloaded": 10
+}

@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "biomass_source": "LOCAL_LAZ_LIDAR",
+  "forest_mask_source": "CHM_height_based",
+  "method": "LiDAR-only (no NLCD/Earth Engine)",
+  "forest_area_ha": 40.160000000000004,
+  "mean_tree_height_m": 36.798925793307816,
+  "p95_tree_height_m": 63.75,
+  "canopy_cover_pct": 99.17273737498456,
+  "mean_agb_Mg_ha": 1946.9362133610039,
+  "carbon_MgC_per_ha": 973.4681066805019,
+  "total_carbon_MgC": 39094.47916428896,
+  "carbon_density_raster": "outputs\\lidar\\carbon_density_5m.tif",
+  "chm_raster": "outputs\\lidar\\chm_5m.tif",
+  "forest_mask_raster": "outputs\\lidar\\forest_mask_5m.tif",
+  "resolution_m": 5.0
+}

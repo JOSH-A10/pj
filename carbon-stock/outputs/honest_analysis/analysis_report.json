@@ -1,0 +1,55 @@
+{
+  "project_title": "Multi-Sensor Forest Analysis (Model-Based, No Validation)",
+  "date": "2026-01-30T17:23:54.342184",
+  "inputs": {
+    "sentinel2": "data/processed/sentinel2_composite.tif",
+    "sentinel1": "data/processed/sentinel1_composite.tif"
+  },
+  "forest_mask": {
+    "forest_area_ha": 0.13919754349817398,
+    "forest_pixels": 14,
+    "ndvi_threshold": 0.791487380862236,
+    "method": "adaptive_percentile",
+    "validated": false
+  },
+  "canopy_cover": {
+    "mean_cover_pct": 92.97200012207031,
+    "std_cover_pct": 7.390363693237305,
+    "ndvi_soil": 0.7041648685932159,
+    "ndvi_veg": 0.818975818157196,
+    "method": "fractional_cover_linear_unmixing",
+    "validated": false,
+    "uncertainty_pct": -5
+  },
+  "density_classification": {
+    "threshold_sparse_medium": 84.51864624023438,
+    "threshold_medium_dense": 94.419189453125,
+    "sparse_pct": 14.285714285714285,
+    "medium_pct": 35.714285714285715,
+    "dense_pct": 50.0,
+    "method": "kmeans_adaptive",
+    "validated": false
+  },
+  "biomass_proxy": {
+    "mean_proxy": 0.5308564305305481,
+    "std_proxy": 0.21393384039402008,
+    "weights": {
+      "ndvi": 0.4,
+      "cover": 0.3,
+      "sar": 0.3
+    },
+    "normalization": "local_percentile_5_95",
+    "units": "unitless",
+    "absolute_biomass": false,
+    "field_calibrated": false,
+    "carbon_credit_suitable": false
+  },
+  "limitations": {
+    "no_field_validation": true,
+    "no_tree_detection": true,
+    "no_species_id": true,
+    "no_absolute_biomass": true,
+    "no_carbon_credits": true,
+    "outputs_model_derived": true
+  }
+}

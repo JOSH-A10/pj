@@ -1,0 +1,11 @@
+{
+  "source": "USGS_3DEP",
+  "project": "CA_SierraNevada_B22",
+  "project_id": "224823",
+  "acquisition_year": "2021",
+  "collect_start": 1635897600000,
+  "collect_end": 1638662400000,
+  "methodology_note": "ALS year not forced; latest available structural data used",
+  "download_status": "api_unavailable",
+  "access_mode": "local_tiles"
+}

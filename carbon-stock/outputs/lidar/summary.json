@@ -1,0 +1,12 @@
+{
+  "mean_height_m": 36.798925793307816,
+  "p95_height_m": 63.75,
+  "canopy_cover_pct": 99.17273737498456,
+  "forest_area_ha": 40.160000000000004,
+  "AGB_Mg_per_ha": 1946.9362133610039,
+  "Carbon_MgC_per_ha": 973.4681066805019,
+  "Total_Carbon_MgC": 39094.47916428896,
+  "forest_mask_source": "CHM_height_based",
+  "canopy_threshold_m": 2.0,
+  "method": "LiDAR-only (no NLCD/Earth Engine)"
+}

@@ -1,0 +1,42 @@
+{
+  "project_summary": {
+    "total_trees": 19,
+    "project_area_ha": 3.579365404238759,
+    "tree_density_per_ha": 5.3082035093426905,
+    "total_co2e_mg": 280.73590542022833,
+    "co2e_per_ha": 78.43175359737651,
+    "uncertainty_lower_mg": 325.06262732868544,
+    "uncertainty_upper_mg": 413.7160711455996,
+    "confidence_interval": "90%"
+  },
+  "methodology": {
+    "detection_method": "Laplacian of Gaussian (LoG) blob detection",
+    "pixel_size_m": 9.971299653726689,
+    "edge_buffer_m": 0.0,
+    "spacing_pattern": "regular",
+    "mean_tree_spacing_m": 22.29650384975299,
+    "estimated_omission_rate": 0.5,
+    "density_assumptions": "NONE - All trees detected from imagery"
+  },
+  "carbon_accounting": {
+    "species": "rubber",
+    "allometry_source": "Wauters et al. 2008 (Hevea brasiliensis)",
+    "carbon_fraction": 0.47,
+    "co2_conversion": 3.6666666666666665,
+    "mean_dbh_cm": "calculated from crown area",
+    "mean_agb_kg_per_tree": 8573.834024846636,
+    "mean_co2e_kg_per_tree": 14775.5739694857
+  },
+  "quality_assurance": {
+    "mean_detection_confidence": 0.617028170524198,
+    "trees_with_high_confidence": 5,
+    "omission_corrected": true,
+    "edge_effects_removed": true
+  },
+  "traceability": {
+    "individual_tree_data": "tree_points.geojson",
+    "crown_polygons": "crown_polygons.geojson",
+    "per_tree_carbon": "carbon_per_tree.csv",
+    "crs": "EPSG:4326"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "status": "success",
+  "start_time": "2026-03-13T00:16:50.265487",
+  "aoi_path": "data\\raw\\aoi.geojson",
+  "year": 2023,
+  "output_directory": "outputs",
+  "local_laz_tiles_dir": "data\\raw\\lidar\\local_tiles",
+  "lidar_resolution_m": 5.0,
+  "allom_a": null,
+  "allom_b": null,
+  "aoi_metadata": {
+    "bounds": {
+      "west": -124.07911400620794,
+      "south": 40.67115733570585,
+      "east": -124.07003741090155,
+      "north": 40.67771577356592
+    },
+    "area_ha": 5.675964815554202e-09,
+    "area_km2": 5.675964815554202e-11,
+    "geometry_count": 1,
+    "crs": "EPSG:4326",
+    "source_file": "data\\raw\\aoi.geojson"
+  },
+  "biomass_source": "LOCAL_LAZ_LIDAR",
+  "forest_mask_source": "CHM_height_based",
+  "forest_area_ha": 40.160000000000004,
+  "mean_tree_height_m": 36.798925793307816,
+  "p95_tree_height_m": 63.75,
+  "canopy_cover_pct": 99.17273737498456,
+  "mean_agb_Mg_ha": 1946.9362133610039,
+  "carbon_MgC_per_ha": 973.4681066805019,
+  "total_carbon_MgC": 39094.47916428896,
+  "chm_path": "outputs\\lidar\\chm_5m.tif",
+  "forest_mask_path": "outputs\\lidar\\forest_mask_5m.tif",
+  "carbon_density_path": "outputs\\lidar\\carbon_density_5m.tif",
+  "resolution_m": 5.0,
+  "final_result": "outputs\\results\\carbon_stock_summary.json",
+  "end_time": "2026-03-13T00:18:24.065428",
+  "duration_seconds": 93.799941
+}

@@ -1,0 +1,53 @@
+{
+  "description": "Tree density ranges (trees/hectare) for canopy density classes",
+  "citation": "Ranges derived from FAO forest inventory guidelines and literature review",
+  "note": "Values are configurable and should be calibrated with field data when available",
+  "version": "1.0",
+  "last_updated": "2026-01-28",
+  
+  "canopy_classes": {
+    "C1_Sparse": {
+      "description": "Sparse canopy: 10-40% crown cover",
+      "min_trees_per_ha": 50,
+      "max_trees_per_ha": 200,
+      "mean_trees_per_ha": 125,
+      "crown_cover_range": [0.10, 0.40],
+      "typical_forest_type": "Open woodland, savanna"
+    },
+    "C2_Open": {
+      "description": "Open canopy: 40-60% crown cover",
+      "min_trees_per_ha": 200,
+      "max_trees_per_ha": 400,
+      "mean_trees_per_ha": 300,
+      "crown_cover_range": [0.40, 0.60],
+      "typical_forest_type": "Open forest, parkland"
+    },
+    "C3_Medium": {
+      "description": "Medium canopy: 60-80% crown cover",
+      "min_trees_per_ha": 400,
+      "max_trees_per_ha": 700,
+      "mean_trees_per_ha": 550,
+      "crown_cover_range": [0.60, 0.80],
+      "typical_forest_type": "Closed forest, secondary growth"
+    },
+    "C4_Dense": {
+      "description": "Dense canopy: 80-100% crown cover",
+      "min_trees_per_ha": 700,
+      "max_trees_per_ha": 1200,
+      "mean_trees_per_ha": 950,
+      "crown_cover_range": [0.80, 1.00],
+      "typical_forest_type": "Dense primary/mature forest"
+    }
+  },
+  
+  "calibration_notes": {
+    "methodology": "Area-based estimation using canopy density classification",
+    "spatial_resolution": "10m (Sentinel-2/1), 3m (PlanetScope)",
+    "limitations": [
+      "Individual tree detection not possible at 10m resolution",
+      "Density ranges require field validation for specific ecosystems",
+      "Values represent average mature trees, not saplings or understory"
+    ],
+    "uncertainty": "±20-30% without field calibration, ±10-15% with calibration"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "source": "USGS_3DEP",
+  "project": "CA_NoCAL_3DEP_Supp_Funding_2018_D18",
+  "project_id": "78980",
+  "acquisition_year": "2019",
+  "collect_start": 1530921600000,
+  "collect_end": 1565481600000,
+  "methodology_note": "ALS year not forced; latest available structural data used",
+  "download_status": "api_no_tiles",
+  "access_mode": "local_tiles",
+  "note": "Project exists but tiles not exposed via API - LOCAL_TILE_MODE enabled"
+}

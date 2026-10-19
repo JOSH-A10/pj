@@ -1,0 +1,53 @@
+{
+  "species": {
+    "common_name": "Teak",
+    "scientific_name": "Tectona grandis",
+    "wood_density_g_cm3": 0.55,
+    "allometry_equation": "Biomass = 0.1428 \u00d7 Height^2.343",
+    "source": "Perez & Kanninen (2003), ICRAF Wood Density Database"
+  },
+  "plantation": {
+    "area_ha": 3.0,
+    "tree_count": 300,
+    "tree_density_per_ha": 100.0
+  },
+  "height": {
+    "mean_m": 13.260000228881836,
+    "uncertainty_m": 3.74,
+    "relative_uncertainty_pct": 28.2,
+    "method": "SAR backscatter correlation (Sentinel-1)",
+    "validation": "NONE - generic model, not site-calibrated"
+  },
+  "biomass": {
+    "per_tree_kg": 60.95,
+    "per_tree_uncertainty_kg": 41.77,
+    "total_mg": 18.29,
+    "total_uncertainty_mg": 12.53,
+    "density_mg_ha": 6.1,
+    "density_uncertainty_mg_ha": 4.18
+  },
+  "carbon": {
+    "total_mg_c": 8.59,
+    "total_uncertainty_mg_c": 5.89,
+    "density_mg_c_ha": 2.86,
+    "density_uncertainty_mg_c_ha": 1.96,
+    "carbon_fraction": 0.47
+  },
+  "co2_equivalent": {
+    "total_mg_co2e": 31.54,
+    "total_uncertainty_mg_co2e": 21.61,
+    "density_mg_co2e_ha": 10.51,
+    "density_uncertainty_mg_co2e_ha": 7.2,
+    "relative_uncertainty_pct": 68.5
+  },
+  "limitations": [
+    "Height from SAR (\u00b128%) - NO LiDAR validation",
+    "Generic allometry (\u00b118%) - NOT site-calibrated",
+    "Total uncertainty: \u00b169% - NOT suitable for carbon credits",
+    "Wood density from literature - NOT field-measured",
+    "Single-age cohort assumed - age variation NOT accounted",
+    "Mortality and understory biomass NOT included",
+    "Soil carbon and root biomass NOT included",
+    "NO MRV compliance - monitoring only"
+  ]
+}
